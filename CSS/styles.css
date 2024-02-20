@@ -23,3 +23,18 @@ p {
     color: #555;
     margin-bottom: 10px;
 }
+
+#coracao {
+    font-size: 240px;
+    display: flex;
+    justify-content: center;
+}
+
+.coracao-vazio::before {
+    content: "\2661"; /* Código Unicode para um coração vazio */
+}
+
+.coracao-preenchido::before {
+    content: "\2665"; /* Código Unicode para um coração preenchido */
+    color: red;
+}
